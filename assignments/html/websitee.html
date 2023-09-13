@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Black and Grey Strips</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .black-strip {
+            background-color: black;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .centered-text {
+            font-size: 25px;
+        }
+
+        .grey-strip {
+            background-color: lightgrey;
+            height: 40px;
+            width: 100%;
+            color: black;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .menu li {
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .align_left {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="black-strip">
+        <p class="centered-text">Your website</p>
+    </div>
+
+    <div class="grey-strip">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 class="align_left">Welcome to your website</h1>
+        <p class="align_left">This is the content area of your page.</p>
+    </div>
+
+    <!-- Footer at the end of the page -->
+    <div class="footer">
+        @2023 Your website All Rights Reserved
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="datetime-local"] {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+button {
+    background-color: #45df4a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f8a33;
+}
+
+#timer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.timer-item {
+    text-align: center;
+}
+
+.timer-item span {
+    display: block;
+    font-size: 24px;
+}
+
+.timer-item span#days,
+.timer-item span#hours,
+.timer-item span#minutes,
+.timer-item span#seconds {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Countdown Timer</h1>
+        <div class="input-container">
+            <input type="datetime-local" id="targetDateTime">
+            <button id="startButton">Start Countdown</button>
+        </div>
+        <div id="timer">
+            <div class="timer-item">
+                <span id="days">0</span>
+                <span>Days</span>
+            </div>
+            <div class="timer-item">
+                <span id="hours">0</span>
+                <span>Hours</span>
+            </div>
+            <div class="timer-item">
+                <span id="minutes">0</span>
+                <span>Minutes</span>
+            </div>
+            <div class="timer-item">
+                <span id="seconds">0</span>
+                <span>Seconds</span>
+            </div>
+        </div>
+    </div>
+    <script src="cd.js"></script>
+</body>
+</html>
