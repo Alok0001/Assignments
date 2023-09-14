@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gender Selection</title>
+</head>
+<body>
+    <h1>Radio Buttons</h1>
+
+    
+
+    <label><input type="radio" name="gender" value="Male" onclick="displayGender()"> Male</label><br>
+    <label><input type="radio" name="gender" value="Female" onclick="displayGender()"> Female</label><br>
+    <label><input type="radio" name="gender" value="Other" onclick="displayGender()"> Other</label><br>
+     
+    <button onclick="getRadioValues()">Get Radio Values</button>
+
+    <p id="genderResult">Gender: </p>
+    <script>
+    
+
+        function getRadioValues() {
+            var selectedGender = document.querySelector('input[name="gender"]:checked');
+            if (selectedGender) {
+                document.getElementById("genderResult").textContent = "Gender: " + selectedGender.value;
+            } else {
+                alert("Please select a gender.");
+            }
+        }
+    </script>
+</body>
+</html>
